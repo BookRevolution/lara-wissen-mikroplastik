@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mikroplastik in der Küche: die 8 Tauschs, die zählen | Dr. Lara Vadlau</title>
+<meta name="description" content="Der ehrliche Küchen-Guide von Dr. Lara Vadlau: 8 Stellen, an denen sich der Tausch gegen Mikroplastik wirklich lohnt, plus die aktuelle Studienlage, ohne Panik und ohne Hype.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gold:#d4af37;
+  --gold-soft:#e6c86b;
+  --dark:#141b28;
+  --darker:#0d131e;
+  --panel:#1b2434;
+  --panel-2:#212c40;
+  --line:rgba(212,175,55,.18);
+  --text:#e8ecf3;
+  --muted:#9aa6bb;
+  --muted-2:#6f7c93;
+  --green:#5fbf8f;
+  --amber:#e0a94a;
+  --red:#d97a72;
+  --maxw:1120px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:var(--darker);color:var(--text);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.serif{font-family:'Fraunces',Georgia,serif;font-weight:500}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.eyebrow{font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:18px}
+a{color:var(--gold-soft);text-decoration:none}
+a:hover{text-decoration:underline}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--gold),var(--gold-soft));z-index:2000;transition:width .1s}
+
+header{position:sticky;top:0;z-index:1000;background:rgba(13,19,30,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+header .container{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-family:'Fraunces',serif;font-size:19px;font-weight:600;letter-spacing:-.01em;color:#fff}
+.brand span{color:var(--gold)}
+nav.links{display:flex;gap:30px}
+nav.links a{color:var(--muted);font-size:13.5px;font-weight:500}
+nav.links a:hover{color:var(--gold);text-decoration:none}
+@media(max-width:760px){nav.links{display:none}}
+
+.hero{position:relative;padding:88px 0 76px;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-30%;right:-15%;width:680px;height:680px;background:radial-gradient(circle,rgba(212,175,55,.12) 0%,transparent 68%);pointer-events:none}
+.hero::after{content:'';position:absolute;bottom:-40%;left:-20%;width:600px;height:600px;background:radial-gradient(circle,rgba(95,191,143,.06) 0%,transparent 70%);pointer-events:none}
+.hero .container{position:relative;z-index:2}
+.hero h1{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(34px,5.4vw,58px);line-height:1.08;letter-spacing:-.02em;color:#fff;max-width:18ch}
+.hero h1 em{font-style:normal;color:var(--gold);white-space:nowrap}
+.hero .lede{margin-top:26px;font-size:clamp(16px,2.1vw,20px);color:var(--muted);max-width:58ch;line-height:1.6}
+.hero .meta{margin-top:34px;display:flex;flex-wrap:wrap;gap:12px}
+.pill{border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:13px;color:var(--text);background:rgba(212,175,55,.05)}
+.pill b{color:var(--gold)}
+.byline{margin-top:38px;display:flex;align-items:center;gap:14px;color:var(--muted);font-size:14px}
+.byline .avatar{width:44px;height:44px;border-radius:50%;overflow:hidden;flex:none}
+.byline .avatar img{width:100%;height:100%;object-fit:cover}
+.byline b{color:var(--text)}
+
+section{padding:74px 0;border-top:1px solid rgba(255,255,255,.04)}
+.sec-head{max-width:64ch;margin-bottom:44px}
+.sec-head h2{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(26px,3.6vw,38px);line-height:1.15;letter-spacing:-.01em;color:#fff}
+.sec-head p{margin-top:16px;color:var(--muted);font-size:17px}
+
+.model{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media(max-width:860px){.model{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.model{grid-template-columns:1fr}}
+.model .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px}
+.model .card .k{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.model .card h3{font-family:'Fraunces',serif;font-size:20px;margin:10px 0 8px;color:#fff;font-weight:500}
+.model .card p{color:var(--muted);font-size:14.5px}
+.arrow-row{text-align:center;color:var(--gold);font-size:24px;margin:22px 0}
+.outcome{background:linear-gradient(135deg,rgba(212,175,55,.10),rgba(212,175,55,.02));border:1px solid var(--line);border-radius:16px;padding:26px 28px;text-align:center}
+.outcome b{color:var(--gold)}
+
+.principle{margin-top:28px;background:var(--darker);border-left:3px solid var(--gold);border-radius:0 12px 12px 0;padding:20px 24px;color:var(--text);font-size:16px}
+.principle .l{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:6px}
+
+/* swap cards */
+.swaps{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:760px){.swaps{grid-template-columns:1fr}}
+.swap{background:var(--panel);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:24px 26px;display:flex;gap:18px}
+.swap .num{font-family:'Fraunces',serif;font-size:30px;font-weight:600;color:var(--gold);line-height:1;flex:none;width:44px}
+.swap h3{font-size:16px;color:#fff;letter-spacing:.02em;font-weight:600;margin-bottom:7px;text-transform:uppercase}
+.swap p{color:var(--muted);font-size:14.5px}
+.swap .tag{display:inline-block;margin-top:12px;font-size:12px;font-weight:600;letter-spacing:.03em;padding:6px 13px;border-radius:999px;background:rgba(95,191,143,.14);color:var(--green);border:1px solid rgba(95,191,143,.3)}
+
+/* evidence facts */
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:760px){.facts{grid-template-columns:1fr}}
+.fact{background:var(--panel);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:26px 28px}
+.fact .big{font-family:'Fraunces',serif;font-size:34px;color:var(--gold);font-weight:600;line-height:1.05}
+.fact h4{color:#fff;font-size:16px;margin:8px 0 8px;font-weight:600}
+.fact p{color:var(--muted);font-size:14.5px}
+.fact .src{margin-top:12px;font-size:12px;color:var(--muted-2)}
+
+.callout{background:linear-gradient(135deg,rgba(212,175,55,.08),transparent);border:1px solid var(--line);border-radius:16px;padding:28px 30px;margin-top:22px}
+.callout .l{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:10px}
+.callout p{color:var(--text);font-size:16.5px}
+.callout p+p{margin-top:12px}
+
+/* do / dont */
+.dd{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:760px){.dd{grid-template-columns:1fr}}
+.dd .box{border-radius:16px;padding:24px 26px;border:1px solid rgba(255,255,255,.06);background:var(--panel)}
+.dd .box.pos{border-color:rgba(95,191,143,.24)}
+.dd .box.neg{border-color:rgba(224,169,74,.22)}
+.dd .box h4{font-size:15px;margin-bottom:14px;display:flex;gap:10px;align-items:center}
+.dd .box.pos h4{color:var(--green)}
+.dd .box.neg h4{color:var(--amber)}
+.dd ul{list-style:none;display:grid;gap:11px}
+.dd li{color:var(--muted);font-size:14.5px;padding-left:20px;position:relative}
+.dd li::before{content:'';position:absolute;left:0;top:9px;width:7px;height:7px;border-radius:50%}
+.dd .box.pos li::before{background:var(--green)}
+.dd .box.neg li::before{background:var(--amber)}
+
+.cta{background:linear-gradient(135deg,var(--panel),var(--darker));border:1px solid var(--line);border-radius:22px;padding:52px 44px;text-align:center;position:relative;overflow:hidden}
+.cta::before{content:'';position:absolute;top:-40%;left:50%;transform:translateX(-50%);width:520px;height:420px;background:radial-gradient(circle,rgba(212,175,55,.14),transparent 70%);pointer-events:none}
+.cta-photo{position:relative;width:132px;height:132px;border-radius:50%;object-fit:cover;object-position:50% 22%;border:3px solid var(--gold);box-shadow:0 12px 34px rgba(0,0,0,.45);margin:0 auto 22px;display:block}
+.cta h2{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(26px,4vw,40px);color:#fff;position:relative;line-height:1.14}
+.cta p{color:var(--muted);max-width:52ch;margin:18px auto 0;position:relative;font-size:17px}
+.btn{display:inline-block;margin-top:30px;background:linear-gradient(135deg,var(--gold),var(--gold-soft));color:#1a1206;font-weight:600;font-size:15.5px;padding:15px 34px;border-radius:999px;position:relative;transition:transform .2s,box-shadow .2s;box-shadow:0 10px 30px rgba(212,175,55,.22)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(212,175,55,.32);text-decoration:none}
+.cta .socials{margin-top:26px;display:flex;gap:24px;justify-content:center;position:relative}
+.cta .socials a{color:var(--muted);font-size:13.5px}
+
+.disclaimer{background:var(--panel);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:22px 26px;color:var(--muted-2);font-size:13.5px;line-height:1.6}
+.disclaimer b{color:var(--muted)}
+.sources{margin-top:18px;color:var(--muted-2);font-size:12.5px;line-height:1.7}
+.sources b{color:var(--muted);display:block;margin-bottom:6px;text-transform:uppercase;letter-spacing:.12em;font-size:11px}
+footer{padding:44px 0;border-top:1px solid var(--line);color:var(--muted-2);font-size:13px}
+footer .container{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;align-items:center}
+footer a{color:var(--muted)}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+
+<header>
+  <div class="container">
+    <div class="brand">Dr. Lara <span>Vadlau</span></div>
+    <nav class="links">
+      <a href="#modell">Denkmodell</a>
+      <a href="#tauschs">Die 8 Tauschs</a>
+      <a href="#forschung">Studienlage</a>
+      <a href="#einordnung">Einordnung</a>
+      <a href="#start">Start</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" style="border-top:none">
+  <div class="container">
+    <div class="eyebrow reveal">Küchen-Guide · Teil 01 · Vertiefung zum Reel</div>
+    <h1 class="reveal">Mikroplastik in der Küche: die <em>8 Tauschs</em>, die wirklich zählen.</h1>
+    <p class="lede reveal">Mikroplastik gelangt oft unbemerkt ins Essen, vor allem über Küchengeräte und Verpackungen mit direktem Lebensmittelkontakt. Nicht jede Änderung bringt viel. Ich habe die Stellen durchforstet, an denen sich der Tausch spürbar lohnt, und ordne ehrlich ein, was die Forschung dazu sagt.</p>
+    <div class="meta reveal">
+      <span class="pill"><b>8 Stellen</b> mit echtem Hebel</span>
+      <span class="pill"><b>~7 Min</b> Lesezeit</span>
+      <span class="pill">Ohne Panik, ohne Verkauf</span>
+    </div>
+    <div class="byline reveal">
+      <div class="avatar"><img src="lara-avatar.jpg" alt="Dr. Lara Vadlau"></div>
+      <div>Von <b>Dr. Lara Vadlau</b> · Longevity Medicine</div>
+    </div>
+  </div>
+</section>
+
+<!-- MENTAL MODEL -->
+<section id="modell">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Das Denkmodell</div>
+      <h2>Kleine Änderungen, große Wirkung.</h2>
+      <p>Du musst nicht perfekt sein. Es reicht, an den Stellen anzusetzen, die wirklich zählen. Fast alles Mikroplastik im Essen entsteht aus vier Auslösern, die zusammenkommen müssen. Wo sie sich häufen, lohnt der Tausch.</p>
+    </div>
+    <div class="model">
+      <div class="card reveal"><div class="k">Auslöser 1</div><h3>Abrieb</h3><p>Schneiden, Kratzen, Mahlen. Reibung löst bei jedem Kontakt winzige Partikel aus Kunststoffoberflächen.</p></div>
+      <div class="card reveal"><div class="k">Auslöser 2</div><h3>Hitze</h3><p>Warme Speisen und heißes Wasser lösen mehr aus Silikon und Kunststoff als kalte.</p></div>
+      <div class="card reveal"><div class="k">Auslöser 3</div><h3>Fett</h3><p>Fetthaltige Lebensmittel wie Öl ziehen Kunststoffbestandteile stärker heraus als wässrige.</p></div>
+      <div class="card reveal"><div class="k">Auslöser 4</div><h3>Direkter Kontakt</h3><p>Berührt Plastik das Essen selbst, wandert es mit. Berührt es nur den Deckel, kaum.</p></div>
+    </div>
+    <div class="arrow-row reveal">↓</div>
+    <div class="outcome reveal">Priorisiere die Stellen, wo <b>mehrere Auslöser zusammentreffen</b>: Schneidebrett (Abrieb), Kochlöffel in heißer Sauce (Hitze), Öl in der Plastikflasche (Fett plus Kontakt). Dort holst du den größten Effekt mit dem kleinsten Aufwand.</div>
+    <div class="principle reveal">
+      <span class="l">Kernprinzip</span>
+      Nicht die Küche entrümpeln, sondern gezielt tauschen. Ein Kunststoffdeckel, der das Essen nie berührt, ist unkritisch. Das Brett, auf dem du täglich schneidest, ist es nicht. Aufwand dorthin, wo Kontakt, Hitze, Fett oder Abrieb sich treffen.
+    </div>
+  </div>
+</section>
+
+<!-- THE 8 SWAPS -->
+<section id="tauschs">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Die Praxis</div>
+      <h2>8 Tauschs, an denen es sich lohnt.</h2>
+      <p>Systematisch durchforstet, hier kompakt. Fang mit den ersten drei an, das sind die mit dem größten Hebel im Alltag.</p>
+    </div>
+    <div class="swaps">
+      <div class="swap reveal"><div class="num">01</div><div><h3>Schneidebrett</h3><p>Kunststoffbretter geben bei jedem Schnitt winzige Plastikpartikel ab, die direkt im Essen landen.</p><span class="tag">Holz oder Edelstahl</span></div></div>
+      <div class="swap reveal"><div class="num">02</div><div><h3>Kochutensilien</h3><p>Silikon und Kunststoff setzen unter Hitze zusätzlich Mikroplastik frei.</p><span class="tag">Holz oder Edelstahl</span></div></div>
+      <div class="swap reveal"><div class="num">03</div><div><h3>Glasbehälter</h3><p>Lebensmittel möglichst in Glas aufbewahren. Ein Kunststoffdeckel ist in Ordnung, solange er die Lebensmittel selbst nicht berührt.</p><span class="tag">Glas statt Plastik</span></div></div>
+      <div class="swap reveal"><div class="num">04</div><div><h3>Olivenöl</h3><p>Zur Flasche aus Glas statt aus Plastik greifen. Besonders bei fetthaltigen Produkten kann sich sonst mehr lösen.</p><span class="tag">Glas statt Plastik</span></div></div>
+      <div class="swap reveal"><div class="num">05</div><div><h3>Griechischer Joghurt</h3><p>Bedenkenlos kaufen, aber den Becher nicht bis zum Boden auskratzen. Genau dort können sich durch Abrieb Kunststoffpartikel lösen.</p><span class="tag">Boden meiden</span></div></div>
+      <div class="swap reveal"><div class="num">06</div><div><h3>Wasser</h3><p>Möglichst aus Glas statt aus Plastik trinken und das Wasser filtern, zum Beispiel mit einer Umkehrosmoseanlage.</p><span class="tag">Glas und Filter</span></div></div>
+      <div class="swap reveal"><div class="num">07</div><div><h3>Kaffeemaschine</h3><p>Das Innere der Maschine prüfen. „Plastikfrei" auf der Verpackung bedeutet nicht immer, dass innen kein Kunststoff verbaut ist.</p><span class="tag">Innenleben prüfen</span></div></div>
+      <div class="swap reveal"><div class="num">08</div><div><h3>Salzmühle</h3><p>Salz kommt auf viele Mahlzeiten, deshalb lohnt sich ein Blick aufs Mahlwerk. Es sollte nicht aus Kunststoff bestehen.</p><span class="tag">Mahlwerk prüfen</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section id="forschung">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Was die Forschung zeigt</div>
+      <h2>Warum ich das ernst, aber nicht panisch nehme.</h2>
+      <p>Dass Mikroplastik in unseren Körper gelangt, ist inzwischen gut belegt. Ob und wie stark es schadet, ist die offene Frage. Beides gehört ehrlich nebeneinander.</p>
+    </div>
+    <div class="facts">
+      <div class="fact reveal"><div class="big">+50 %</div><h4>Mehr Mikroplastik im Gehirn</h4><p>In menschlichen Gehirnproben stieg die Konzentration zwischen 2016 und 2024 um rund 50 Prozent. Nachweisbar, messbar, zunehmend.</p><div class="src">Nature Medicine, 2025</div></div>
+      <div class="fact reveal"><div class="big">4,5×</div><h4>Höheres Herz-Kreislauf-Risiko</h4><p>Menschen, in deren Gefäßablagerungen Mikroplastik nachweisbar war, hatten ein 4,5-fach höheres Risiko für Herzinfarkt, Schlaganfall oder Tod. Beobachtend, nicht bewiesen kausal.</p><div class="src">New England Journal of Medicine, 2024</div></div>
+      <div class="fact reveal"><div class="big">g/Jahr</div><h4>Das Schneidebrett als Quelle</h4><p>Ein Kunststoff-Schneidebrett kann pro Person und Jahr mehrere Gramm Mikroplastik abgeben, das direkt aufs Essen wandert. Genau deshalb steht es auf Platz 01.</p><div class="src">Environmental Science &amp; Technology</div></div>
+      <div class="fact reveal"><div class="big">Darm</div><h4>Hinweise aus dem Tiermodell</h4><p>Mäuse, deren Futter auf Kunststoffbrettern zubereitet wurde, zeigten mehr Darmentzündung und ein verändertes Mikrobiom. Modell, nicht 1:1 auf den Menschen übertragbar.</p><div class="src">Tierstudie, 2025</div></div>
+    </div>
+    <div class="callout reveal">
+      <div class="l">Ehrlich eingeordnet</div>
+      <p>Der <b>Nachweis</b> ist robust: Mikroplastik steckt in Blut, Plazenta, Lunge, Gefäßen und Gehirn. Der <b>Schadensbeweis</b> beim Menschen ist es noch nicht: Vieles ist beobachtend, Zusammenhang statt bewiesener Ursache.</p>
+      <p>Das ist kein Grund für Panik und kein Grund zum Wegschauen. Es ist ein Grund, die einfachen, kostengünstigen Tauschs zu machen, bei denen der Aufwand klein und der mögliche Nutzen real ist.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EINORDNUNG -->
+<section id="einordnung">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Verhältnismäßig bleiben</div>
+      <h2>Worauf es sich lohnt, und worauf nicht.</h2>
+    </div>
+    <div class="dd">
+      <div class="box pos reveal">
+        <h4>◆ Das bringt spürbar etwas</h4>
+        <ul>
+          <li>Schneidebrett und Kochutensilien auf Holz oder Edelstahl umstellen.</li>
+          <li>Fetthaltiges wie Öl aus Glas statt aus Plastik kaufen.</li>
+          <li>Heißes nicht in Plastik erhitzen oder lagern.</li>
+          <li>Wasser aus Glas trinken und filtern.</li>
+          <li>Mahlwerk von Salzmühle und Innenleben der Kaffeemaschine prüfen.</li>
+        </ul>
+      </div>
+      <div class="box neg reveal">
+        <h4>◆ Das musst du nicht</h4>
+        <ul>
+          <li>Die ganze Küche auf einmal austauschen. Nach und nach reicht.</li>
+          <li>Jeden Kunststoffdeckel verbannen, der das Essen gar nicht berührt.</li>
+          <li>In Panik verfallen wegen einzelner Berührungspunkte.</li>
+          <li>Teure „Detox"-Produkte kaufen, die Mikroplastik angeblich entfernen.</li>
+          <li>Perfektion anstreben. Die Richtung zählt, nicht die Reinheit.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="principle reveal" style="margin-top:26px">
+      <span class="l">Die ehrliche Zusammenfassung</span>
+      Reduzieren, wo es einfach ist. Die drei größten Hebel sind Schneidebrett, Kochutensilien und fetthaltige Produkte in Glas. Der Rest ist Feintuning. Nicht perfekt sein, einfach an den Stellen ansetzen, die wirklich zählen.
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="start">
+  <div class="container">
+    <div class="cta reveal">
+      <img class="cta-photo" src="lara-portrait.jpg" alt="Dr. Lara Vadlau" loading="lazy">
+      <h2>Wissen, das dich schützt,<br>nicht verunsichert.</h2>
+      <p>Ich baue jede Woche Reels und Vertiefungen wie diese: die Studie hinter der Schlagzeile, ehrlich eingeordnet. Kein Hype, keine Panikmache, nur das, was die Evidenz hergibt und was du im Alltag umsetzen kannst.</p>
+      <a class="btn" href="https://www.instagram.com/laravadlau/" target="_blank" rel="noopener">Folge für mehr auf Instagram →</a>
+      <div class="socials">
+        <a href="https://www.instagram.com/laravadlau/" target="_blank" rel="noopener">Instagram</a>
+        <a href="#">Newsletter</a>
+        <a href="#">Praxis</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DISCLAIMER + SOURCES + FOOTER -->
+<section style="padding-top:20px">
+  <div class="container">
+    <div class="disclaimer reveal">
+      <b>Wichtiger Hinweis.</b> Allgemeine Information, kein Ersatz für individuelle ärztliche Beratung, Diagnose oder Behandlung. Die genannten Studien sind Momentaufnahmen der Forschung. Für einen Teil der Befunde gilt: Sie zeigen einen Zusammenhang, keine bewiesene Ursache. Neue Evidenz kann das Bild verändern.
+      <div class="sources">
+        <b>Quellen</b>
+        Nature Medicine (2025): Anstieg von Mikroplastik in menschlichen Gehirnproben · New England Journal of Medicine (2024), Marfella et al.: Mikroplastik in Gefäßablagerungen und kardiovaskuläre Ereignisse · Environmental Science &amp; Technology: Mikroplastik aus Kunststoff-Schneidebrettern · Tierstudie (2025): Darmentzündung und Mikrobiom bei Mäusen. Basierend auf dem Küchen-Guide von Dr. Vadlau.
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div>© 2026 Dr. Lara Vadlau · Longevity Medicine</div>
+    <div>Wissens-Vertiefung zum Reel · Keyword: <b style="color:var(--gold)">MIKROPLASTIK</b></div>
+  </div>
+</footer>
+
+<script>
+const prog=document.getElementById('progress');
+addEventListener('scroll',()=>{const h=document.documentElement;prog.style.width=(h.scrollTop)/(h.scrollHeight-h.clientHeight)*100+'%';});
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
